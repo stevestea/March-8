@@ -1,0 +1,72 @@
+body {
+  background-color: #ffb7c5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.pics {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #a0c4ff;
+  position: relative;
+  z-index: 1;
+}
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.header {
+  height: 200px;
+  background-color: #ffb7c5;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+h1 {
+  color: #fcedf2;
+  background-color: #c095e4;
+  border: 10px solid #fcedf2;
+  border-radius: 20px;
+  font-size: 60px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  z-index: 1;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  width: 1000px;
+  background-color: #fcedf2;
+  border: 10px solid #c095e4;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.symbol {
+  position: absolute;
+  color: #ff69b4; /* Hot pink for hearts */
+  font-size: 24px;
+  animation: fall linear infinite;
+  z-index: 0;
+}
+
+/* Animation for falling symbols */
+@keyframes fall {
+  0% {
+    transform: translateY(0); /* Start from the top of the screen */
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh); /* End at the bottom of the screen */
+    opacity: 0; /* Slight fade-out effect */
+  }
+}

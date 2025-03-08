@@ -1,0 +1,86 @@
+body {
+  background-color: #ffb7c5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  width: 800px;
+  background-color: #c095e4;
+  border: 10px solid #fcedf2;
+  border-radius: 20px;
+  margin-top: 100px;
+  color: #fcedf2;
+  z-index: 1;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.option {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 60px;
+  width: 400px;
+  background-color: #c095e4;
+  border: 5px solid #fcedf2;
+  border-radius: 10px;
+  color: #fcedf2;
+  transition: transform 0.3s ease;
+}
+h2:hover {
+  transform: scale(1.5);
+}
+img {
+  z-index: 1;
+  width: 300px;
+  height: auto;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.symbol {
+  position: absolute;
+  color: #ff69b4; /* Hot pink for hearts */
+  font-size: 24px;
+  animation: fall linear infinite;
+}
+
+/* Animation for falling symbols */
+@keyframes fall {
+  0% {
+    transform: translateY(0); /* Start from the top of the screen */
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh); /* End at the bottom of the screen */
+    opacity: 0; /* Slight fade-out effect */
+  }
+}
